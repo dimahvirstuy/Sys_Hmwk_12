@@ -9,7 +9,7 @@ int main(){
   int f=fork();
   if(f){
     fork();
-    wait();
+    wait(status);
     printf("I am the parent and I'm done waiting. See ya later.");
   }
   if(!f){
